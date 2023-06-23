@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class=" md:flex justify-between text-left py-3 md:px-20 bg-cyan-800 text-white">
+            <h3>Weather Forecasting</h3>
+            <ul class="md:flex md:gap-8 ">
+                <li><a href="/index.html">Home</a></li> 
+                <li><a href="#">By Chart</a></li>   
+            </li>  
+        </div>
+    </nav>
+    
+    <div class="container mx-auto mt-10">
+        
+            <h3 class="font-bold text-white py-5 px-3 bg-slate-700" >Average Temperature Levels </h3>
+            <div class=" w-full lg:w-2/3 md:mx-auto"><canvas id="tempChart"></canvas></div>
+            <!-- style="width: 800px;"  -->
+        <div class="bg- to-blue-500relative mt-5 overflow-x-auto my-10">
+        <h3 class="font-bold text-white py-5 px-3 bg-slate-700">Weather Forecast Details</h3>
+        
+        <table class=" table lg:w-3/4  mx-auto text-sm text-left my-3 ">
+            <thead class="bg-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Date
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Min temp.
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Max temp.
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Weather
+                    </th>
+                    <th scope="col" class="px-6 py-3 ">
+                        Moon Phase
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Sun Rise Time
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Sun Set Time
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-body  font-bold">
+            
+            </tbody>
+        </table>
+        </div>
+
+    </div>
+
+    
+    
+
+    <script type="module" src="/src/chart.js"></script>
+    <script type="module" src="/main.js"></script>
+
+</body>
+</html>

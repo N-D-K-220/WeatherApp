@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <div class=" md:flex justify-between text-left py-3 md:px-20 bg-cyan-800 text-white">
+        <h3>Weather Forecasting</h3>
+        <ul class="md:flex md:gap-8 ">
+          <li><a href="#">Home</a></li> 
+          <li><a href="/src/chart.html">By Chart</a></li>   
+        </li>  
+      </div>
+    </nav>
+    <div class="container mx-auto mt-2">
+
+      <div class="flex lg:justify-end ">
+        <input type="text" class=" location border-2 border-blue-950 py-2 px-4 my-2 mx-2 " placeholder="Enter your Location">
+          <button type="button" class="text-black bg-blue-700  focus:ring-4  font-bold  text-sm py-2 px-4 my-2 mx-2 lg:hidden">Enter</button>        
+      </div>
+
+      <div class="container mt-1 block lg:flex  lg:border border-black">
+
+        <!-- RIGHT SECTION    -->
+        <div class="w-full lg:w-3/5 p-2 lg:border lg:border-gray-700  bg-white">
+          <div class="header ">
+            <h3 class="font-bold md:mx-4">Current Weather</h3>
+            <p class="locationName font-bold md:mx-4 px-2 bg-slate-700 text-white py-3">Yangon</p>
+            <p class=" time font-bold md:mx-4">time</p>
+          </div>
+          <div class="weather-data my-3">
+            <!-- adding data from weather js -->
+          </div>
+          <h3 class="font-bold text-xl">Seven Day Forcasts</h3>
+          <div class="seven-day">
+            <!-- adding data from weather js -->
+          </div>
+
+        </div>
+
+        <!-- LEFT SECTION  -->
+      <div class="w-full lg:w-2/5  bg-white">
+          <h3 class="my-3 px-5 font-bold text-xl">Top Stories </h3>
+          <article>
+            <div class=" bg-white border border-gray-200 shadow-xl mx-5 px-2 py-3 my-2 ">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold">Tropical Storm Bret racing toward Caribbean</h5>
+                </a>
+                <p class=" font-normal">AccuWeather forecasters say another named storm could form on the heels of Bret in the Atlantic.</p>
+                <a href="https://www.accuweather.com/en/hurricane/tropical-storm-bret-racing-toward-caribbean-as-forecasters-monitor-another-budding-system/1543896" class=" text-blue-700 underline-offset-1">
+                  See Details
+                </a>
+            </div>
+          </article>
+
+          <article>
+            <div class=" bg-white border border-gray-200 shadow-xl mx-5 px-2 py-3 my-2">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold">As Switzerland’s glaciers melt,</h5>
+                </a>
+                <p class=" font-normal">The country reach net zero – removing from the atmosphere at least as much planet-warming pollution as it emits – by 2050.</p>
+                <a href="https://www.accuweather.com/en/climate/as-switzerlands-glaciers-melt-voters-approve-new-climate-law-to-cut-planet-heating-pollution/1544298" class=" text-blue-700 underline-offset-1">
+                  See Details
+                </a>
+            </div>
+          </article>
+
+          <article>
+            <div class=" bg-white border border-gray-200 shadow-xl mx-5 px-2 py-3 my-2">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold">5 ways you can be struck by lightning</h5>
+                </a>
+                <p class=" font-normal">Direct strikes can be fatal, but different types of lightning strikes can kill too, including in less expected ways like a side flash or a streamer.</p>
+                <a href="https://www.accuweather.com/en/climate/as-switzerlands-glaciers-melt-voters-approve-new-climate-law-to-cut-planet-heating-pollution/1544298" class=" text-blue-700 underline-offset-1">
+                  See Details
+                </a>
+            </div>
+          </article>
+      </div>
+      
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+    <script src="/src/weather.js"></script>
+  </body>
+</html>

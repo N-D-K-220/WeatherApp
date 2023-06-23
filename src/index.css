@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .temperatureData{
+        @apply  container w-2/5 bg-slate-500 mx-5 ;
+    }
+    .current-weather{
+        @apply lg:flex justify-between mt-5;
+    }
+    .seven-day{
+        @apply grid grid-cols-4 md:flex lg:gap-0.5 justify-evenly my-2;
+    }
+    .tr-weather{
+        @apply border-b-2 border-gray-700;
+    }
+    .td-weather{
+        @apply px-10;
+    }
+    .td-data{
+        @apply font-bold;
+    }
+    .temperature{
+        @apply text-5xl font-bold;
+    }
+    .table-row{
+        @apply border-b font-bold border-gray-800;
+    }
+    @media (max-width: 800px) { 
+        .table thead{
+            display: none;
+        }
+        .table, .table td{
+            display: block;
+            width: 100%;
+            text-align: right;
+            position: relative;
+        }
+        .table td:before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: bold;
+            text-align: left;
+            font-weight: bold;
+        }
+        .table td:nth-child(even){
+            background-color: grey;
+        }
+    }
+
+}
